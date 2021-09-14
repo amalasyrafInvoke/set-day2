@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EduHub</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div#container {
+        width: 900px;
+        height: auto;
+        background-color: lightslategray;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      nav {
+        width: 900px;
+        height: 80px;
+        background-color: #6d41bf;
+        padding-left: 50px;
+        padding-top: 30px;
+        box-sizing: border-box;
+      }
+
+      nav h1,
+      nav ul,
+      nav ul li {
+        display: inline-block;
+        color: floralwhite;
+      }
+
+      nav h1 {
+        margin-right: 50px;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      .section {
+        width: 900px;
+        height: 300px;
+        background-color: skyblue;
+        text-align: center;
+        padding-top: 120px;
+        box-sizing: border-box;
+      }
+
+      .section2 {
+        width: 900px;
+        height: 300px;
+        background-color: palevioletred;
+        text-align: center;
+        padding-top: 120px;
+        box-sizing: border-box;
+      }
+
+      .section2 form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      div.content {
+        width: 900px;
+        height: 500px;
+        background-color: rgb(83, 83, 238);
+      }
+      div.content-header {
+        text-align: center;
+        padding: 40px 0;
+        height: 100px;
+        box-sizing: border-box;
+        background-color: cornflowerblue;
+        color: floralwhite;
+      }
+      div.content-holder {
+        text-align: center;
+        padding: 30px 0;
+        box-sizing: border-box;
+      }
+      div.offer-img,
+      p.offer-para {
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        vertical-align: middle;
+        background-color: gray;
+        border-radius: 10px;
+        margin: auto;
+      }
+
+      div.package_list {
+        background-color: whitesmoke;
+        height: 250px;
+        width: 200px;
+        display: inline-block;
+        margin: 30px 10px;
+        border-radius: 25px;
+        box-shadow: -2px 3px 10px black;
+        overflow: hidden;
+      }
+
+      div.package_list img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div.student_list {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        margin: 50px 10px;
+        background-color: rgb(85, 83, 83);
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      div.student_list img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div.submit-button {
+        width: 250px;
+        padding: 20px 0;
+        background-color: seagreen;
+        text-align: center;
+        border-radius: 50px;
+        border: 2px solid black;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <h1>Eduhub</h1>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <section class="section">
+        <h2>
+          EduHub <br />
+          Get Smart!
+        </h2>
+      </section>
+      <section class="section2">
+        <h2>Sign up now!</h2>
+        <form>
+          <input
+            placeholder="Your Email"
+            type="email"
+            name="email"
+            id="input-email"
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+      <div class="content">
+        <div class="content-header">
+          <h2>What We Offer</h2>
+        </div>
+        <div class="content-holder">
+          <div class="offer-img"></div>
+          <p class="offer-para">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content-header">
+          <h2>Our Packages</h2>
+        </div>
+        <div class="content-holder">
+          <div class="package_list">
+            <img src="images/landscape1.jpg" loading="lazy" alt="Landscape 1" />
+          </div>
+          <div class="package_list">
+            <img src="images/landscape2.jpg" alt="Landscape 2" />
+          </div>
+          <div class="package_list">
+            <img src="images/landscape3.jpg" alt="landscape 3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content-header">
+          <h2>What Student Say</h2>
+        </div>
+        <div class="content-holder">
+          <div class="student_list">
+            <img src="images/user1.jpeg" alt="User 1" />
+          </div>
+          <div class="student_list">
+            <img src="images/user2.jpeg" alt="User 2" />
+          </div>
+          <div class="student_list">
+            <img src="images/user3.jpeg" alt="User 3" />
+          </div>
+          <div class="submit-button">Apply Now</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
